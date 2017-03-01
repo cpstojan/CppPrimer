@@ -1,0 +1,16 @@
+Chapter 1 Notes
+-the primary goal of the new standards of C++ (C++11) are to increase uniformity, make the standard library easier, safer and more efficient, and to make it easier to write efficient abstractions
+-new features include auto, smart ptrs, and move-enabled containers
+
+function - named unit of computation
+main - function called by the operating system to execute a C++ program, each program must have one and only one function named main
+-a function definition has four elements: return type, function name, parameter list and function body
+-the value returned by main is a status indicator, usually a value of 0 indicates success, non zero has meaning define by the system (type of error)
+-a type defines both the contents of a data element and the operations that are possible on that data
+-the data our programs manipulate are stored in variables and every variable has a type
+source file - term used to describe a file that contains a C++ program
+-to obtain the status on Unix systems use the command echo $? 
+-on Unix executables have no suffic (on Windows suffix is .exe)
+-options can be added to the GNU compiler an example is -Wall which generates warnings about problematic constructs
+-to create an executable on GNU g++ -c prog1 prog1.cc
+-then to run the created executable (assuming permissions) ./prog1
