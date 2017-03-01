@@ -1,7 +1,10 @@
 Chapter 1 Notes
+
+Introduction to the Book:
 -the primary goal of the new standards of C++ (C++11) are to increase uniformity, make the standard library easier, safer and more efficient, and to make it easier to write efficient abstractions
 -new features include auto, smart ptrs, and move-enabled containers
 
+Writing a Simple C++ Program:
 function - named unit of computation
 main - function called by the operating system to execute a C++ program, each program must have one and only one function named main
 -a function definition has four elements: return type, function name, parameter list and function body
@@ -14,3 +17,5 @@ source file - term used to describe a file that contains a C++ program
 -options can be added to the GNU compiler an example is -Wall which generates warnings about problematic constructs
 -to create an executable on GNU g++ -c prog1 prog1.cc
 -then to run the created executable (assuming permissions) ./prog1
+
+A First Look at Input/Output
