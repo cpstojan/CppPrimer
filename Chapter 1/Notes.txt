@@ -18,4 +18,23 @@ source file - term used to describe a file that contains a C++ program
 -to create an executable on GNU g++ -c prog1 prog1.cc
 -then to run the created executable (assuming permissions) ./prog1
 
-A First Look at Input/Output
+A First Look at Input/Output:
+-in the standard library input/output is commonly done in the iostream, specifically istream and ostream
+-a stream is a sequence of characters read from or written from an IO device
+-the library defines four IO objects
+	1) to handle input we use an object of type istream named cin
+	2) for output an object of type ostream named coutt is used
+	3) for standard error type ostream; cerr
+	4) for general information type ostream; clog
+-every program that uses a library facility must include its associated header
+-an expression yields a result and is composed of one or more operands and (usually) an operator
+-the output operator is << it takes two operands; the left-hand operand must be an ostream object, the right-hand operand is a value to print
+-because the operator returns its left-hand operand, we can chain together output requests
+string literal - sequence of zero or more characters enclosed in double quotes
+manipulator - object, such as std::endl that when read or written "manipulates" the stream itself
+-reading cin flushes the cout buffer, endl also flushes the buffer
+-flushing the buffers ensures that all the ouput the program has generated so far is actually written to the output stream, rather than sitting in memory
+-when writing print statements to debug always flush the stream, otherwise if the program crashes output may be left in the buffer hiding the true crash site
+-writing std::cout uses the scope operator to say that we want to use the name cout that is defined in the namespace std
+initialize - give an object a value at the same time that it is created (defined)
+-the input operator is >> it behaves analogously to the output operator (istream on its left, object on its right) returning its left-hand operand to continue the chain while storing the value in the object
