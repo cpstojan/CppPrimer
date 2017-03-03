@@ -38,3 +38,8 @@ manipulator - object, such as std::endl that when read or written "manipulates" 
 -writing std::cout uses the scope operator to say that we want to use the name cout that is defined in the namespace std
 initialize - give an object a value at the same time that it is created (defined)
 -the input operator is >> it behaves analogously to the output operator (istream on its left, object on its right) returning its left-hand operand to continue the chain while storing the value in the object
+
+A Word About Comments
+-comments come in two forms single line and multiline, multiline comments /* */ do not nest
+-these types of comments are inherited from C
+-for multiline comments it is sometimes advantageous to start each line with an asteriks to easily show the line is commented out
