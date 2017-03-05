@@ -43,3 +43,10 @@ A Word About Comments
 -comments come in two forms single line and multiline, multiline comments /* */ do not nest
 -these types of comments are inherited from C
 -for multiline comments it is sometimes advantageous to start each line with an asteriks to easily show the line is commented out
+
+Flow of Control
+-a while statement executes 'while' something is true
+-a condition is an expression that yields a result that is either true or false
+-the operator += adds the right hand operand to the left-hand operand and stores the result in the left-hand operand
+-a while executes by testing the condition then executing the associated statement until the condition is false
+-a block is a sequence of zero or more statements enclosed by curly brackets
