@@ -47,6 +47,10 @@ A Word About Comments
 Flow of Control
 -a while statement executes 'while' something is true
 -a condition is an expression that yields a result that is either true or false
--the operator += adds the right hand operand to the left-hand operand and stores the result in the left-hand operand
+-the operator += adds the right-hand operand to the left-hand operand and stores the result in the left-hand operand
 -a while executes by testing the condition then executing the associated statement until the condition is false
 -a block is a sequence of zero or more statements enclosed by curly brackets
+
+-each for statement has two parts a header and a body, the header controls how often the body is executed
+-the header has trhee parts: an initialization statement, a condition, and an expression
+-for loops are advantageous when there is a definite amount of iterations, while should be used if indefinite
