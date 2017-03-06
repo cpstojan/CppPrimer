@@ -52,5 +52,6 @@ Flow of Control
 -a block is a sequence of zero or more statements enclosed by curly brackets
 
 -each for statement has two parts a header and a body, the header controls how often the body is executed
--the header has trhee parts: an initialization statement, a condition, and an expression
+-the header has three parts: an initialization statement, a condition, and an expression
+-the initialization statement is the only part of the header that runs only once, the other two parts run on every iteration
 -for loops are advantageous when there is a definite amount of iterations, while should be used if indefinite
