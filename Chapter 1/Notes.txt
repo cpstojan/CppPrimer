@@ -55,3 +55,11 @@ Flow of Control
 -the header has three parts: an initialization statement, a condition, and an expression
 -the initialization statement is the only part of the header that runs only once, the other two parts run on every iteration
 -for loops are advantageous when there is a definite amount of iterations, while should be used if indefinite
+
+-when we use an istream as a condition while (cin >> value), the effect is to test the state of the stream
+-the condition produces false at EOF or at an invalid input
+-an end of file can be inputed on Unix using ctrl + d
+
+syntax errors - the programmer has made a grammatical error in C++
+type errors - each item of data in C++ has an associated type, if types mismatch this may throw an error
+declaration errors - every name used in a C++ program must be declared, failure to declare a name may throw an error
