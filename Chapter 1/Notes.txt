@@ -69,3 +69,12 @@ declaration errors - every name used in a C++ program must be declared, failure 
 -there is no right way to format but there is value in consistency
 
 1.5 Introducing Classes:
+data structure - a logical grouping of data and operations
+-in C++ we define our own data structures by defining a class
+class - facility for defining our own data structures together with associated operations
+-a primary focus of C++ is to make it possible to define class types that behave as naturally as built in types
+-to use a class we need to know three things:
+	1) what is its name?
+	2) where is it defined?
+	3) what operations does it support?
+-conventionally header file names are derived from the name of a class defined in that header
