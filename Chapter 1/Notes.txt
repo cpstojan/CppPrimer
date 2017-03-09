@@ -85,6 +85,6 @@ class - facility for defining our own data structures together with associated o
 -using file redirection in Bash can make testing programs much less tedious
 	c1 < infile.txt > outfile.txt
 
--a member function is a function taht is defined as part of a class, sometimes referred to as methods
+-a member function is a function that is defined as part of a class, sometimes referred to as methods
 -the . operator applies only to objects of class type, the left-hand operand must be an object of class type, the right-hand operand must name a member of that type
 -we call a function using the call operator (), arguments go in the parenthese if any
