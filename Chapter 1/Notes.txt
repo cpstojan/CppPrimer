@@ -78,3 +78,10 @@ class - facility for defining our own data structures together with associated o
 	2) where is it defined?
 	3) what operations does it support?
 -conventionally header file names are derived from the name of a class defined in that header
+-headers from the standard library are enclosed in angle brackets, all others are enclosed in double quotes
+
+-using file redirection in Bash can make testing programs much less tedious
+
+-a member function is a function taht is defined as part of a class, sometimes referred to as methods
+-the . operator applies only to objects of class type, the left-hand operand must be an object of class type, the right-hand operand must name a member of that type
+-we call a function using the call operator (), arguments go in the parenthese if any
