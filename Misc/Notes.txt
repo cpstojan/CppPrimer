@@ -1,0 +1,33 @@
+REST:
+-ReST stands for Representational state tranfer
+
+-all webpages are made up of resources, these resources are pointed to by URLs
+-resources can be thought of as 'nouns'
+-HTTP creates the 'verbs' to apply to said 'nouns', these verbs are GET, PUT, POST and DELETE
+-GET is what is originally used when accessing a webpage it gets the resource
+-GET works regardless of the type of the 'noun' it can be an image, script or anytype of file
+
+-When a machine GETs a resource it looks at the machine readable version (only minimal data)
+-When a browser GETs a resource it looks at the human readable version (with styling and proper layouts)
+-ideally there would be a machine and human version of each webpage
+-by having a machine version it allows separate sites to communicate very easily as information could be passed around in a standard way
+
+-a ReSTful Web service, works by replying in a defined format (XML, HTML, JSON or other) when requests are made
+-ReST makes use of a stateless protocol and standard operations, for fast performance, reliability, and scalability
+
+-there are six guiding constraints that define a ReSTful system
+	1) Client-server - seperating the user interface concerns from the data storage concerns
+	2) Stateless - each request from any client contains all information necessary, session state is held in the client not server
+	3) Cacheable - clients or intermediaries can cache responses, responses must implicitly or explicitly define themselves as cacheable or not
+	4) Layered system - a client cannot ordinarily tell whether it is connected to the end server or an intermediary
+	5) Code on demand (optional) - servers can temporarily extend or customize the funcionality of a client by the transfer of executable code (Java applets or Javascript)
+	6) Uniform Interface - simplifies and decouples the architecture
+
+
+POST - one system needs to add something to another system
+PUT - one system needs to update something in another system
+
+-ReST simply gets a request and sends it to the proper server regardless on what is being requested, it is an architecture
+
+-http://web.archive.org/web/20130116005443/http://tomayko.com/writings/rest-to-my-wife
+
