@@ -85,6 +85,25 @@ class - facility for defining our own data structures together with associated o
 -using file redirection in Bash can make testing programs much less tedious
 	c1 < infile.txt > outfile.txt
 
--a member function is a function that is defined as part of a class, sometimes referred to as methods
+-a member function is a function that is defined as part of a class, sometimes referred to as methods, it is ordinarily called to operate on a specific object
 -the . operator applies only to objects of class type, the left-hand operand must be an object of class type, the right-hand operand must name a member of that type
 -we call a function using the call operator (), arguments go in the parenthese if any
+
+1.6 The Bookstore Program
+buffer - a region of storage used to hold data.  IO facilities often store input in a buffer and read or write the buffed independently from actions in the program. Cin and endl flush the buffer
+header - mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive
+library type - type, such as istream, defined by the standard library
+namespace - mechanism for putting names defined by a library into a single place.  Namespaces help avoid inadvertent name clashes.
+-variables of class type for which no initial value is specified are initialized as specified by the class definition
+-variables of built-in type defined inside a function are uninitialized unless explicitly initialized. It is an error to try to use the value of an uninitialized variable
+-the names defined by the C++ library are in the namespace std
+-cerr is not buffered, clog is buffered
+-library types such as istream and ostream are classes
+-for a conditonal statement 0 is false any other value is true (opposite of $?)
+-expressions are evaluated to produce a result, it is the smallest unit of computation (i + j)
+
+-the main goals of this chapter were to allow you to compile and execute a simple C++ program
+-also how to define a main, define variables do input and output, and how to use flow control (if, while, for)
+-this chapter showed how to use a class defined by someone else, later chapters will show how to define a class
+
+Part I: The Basics:
