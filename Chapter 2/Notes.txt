@@ -1,0 +1,8 @@
+Chapter 1 Notes
+
+Introduction to Chapter 2:
+-C++ defines several primitive types (characters, integers, floating-point numbers, etc.)
+-more importantly C++ allows for the definition of our own data types
+-the standard library allows defines more complicated types that can be very powerful
+
+2.1 Primitive Built-in Types:

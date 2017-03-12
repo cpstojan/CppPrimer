@@ -89,7 +89,7 @@ class - facility for defining our own data structures together with associated o
 -the . operator applies only to objects of class type, the left-hand operand must be an object of class type, the right-hand operand must name a member of that type
 -we call a function using the call operator (), arguments go in the parenthese if any
 
-1.6 The Bookstore Program
+1.6 The Bookstore Program:
 buffer - a region of storage used to hold data.  IO facilities often store input in a buffer and read or write the buffed independently from actions in the program. Cin and endl flush the buffer
 header - mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive
 library type - type, such as istream, defined by the standard library
