@@ -107,3 +107,15 @@ namespace - mechanism for putting names defined by a library into a single place
 -this chapter showed how to use a class defined by someone else, later chapters will show how to define a class
 
 Part I: The Basics:
+-every language has a set of features, understanding these features is key to learning the language
+-the most fundamental features are 
+	-built-in types such as integers, characters, etc.
+	-variables
+	-expressions and statements to manipulate values
+	-control structures (flow control)
+	-defining functions
+-the type of an object determines what operations can be performed on it
+-some languages (Python) check types at run time, C++ is statically types meaning type checking is done at compile time
+-statically typed languages must have the compile knowing the type of every name used in the program
+-C++ power comes from it's ability to allow the programmer to define new data structures
+-programmer defined types are sometimes called class types (as opposed to built-in types)
