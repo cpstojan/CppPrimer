@@ -1,4 +1,4 @@
-Chapter 1 Notes
+Chapter 2 Notes
 
 Introduction to Chapter 2:
 -C++ defines several primitive types (characters, integers, floating-point numbers, etc.)
@@ -6,3 +6,48 @@ Introduction to Chapter 2:
 -the standard library allows defines more complicated types that can be very powerful
 
 2.1 Primitive Built-in Types:
+arithmetic types - built-in types representing boolean values, character, integers, and floating-point numbers
+-the void type has no associated values
+-artihmetic types are divided into two categories 
+	1) integral types - character and booolean
+	2) floating-point types
+-minimum size (actual size depends on machine)
+	bool - boolean - NA
+	char - character - 8 bits
+	wchar_t - wide character - 16 bits
+	char16_t - unicode character - 32 bits
+	char32_t - unicode character - 32 bits
+	short - short integer - 16 bits
+	int - integer - 16 bits
+	long - long integer - 32 bits
+	long long - long integer 64 bits
+	
+-a float is a single-precision floating-point containing 6 siginificant digits
+-a double is a double-precision floating-point containing 10 siginificant digits
+-a long double is an extended-precision floating-point containing 10 significant digits
+-most compilers provide more precision than the speciied minimum of significant digits
+-a char is guaranteed to be big enough to hold numeric values corresponding to the characters in the machine's basic character set
+	-always the same size as a single machine byte
+-a wchar_t is guranteed to be large enough to hold any character in the machine's largest extended character set
+-Unicode is a standard for representing characters used in essentially any natural language
+-the type long long was introduced by the new standard
+-the smallest chunk of addressable memory is referred to as a byte
+-a word is a small number of bytes
+-on most machines a byte contains 8 bits and a word is either 32 or 64 bits
+-typically floats are represented in one word, doubles in two words, and long doubles in three or four words
+-other than bool and the extended character types, the integral types may be signed or unsigned
+signed - integer type that holds negative or positive values, including zero
+unsigned - integer type that holds only values greater than or equal to zero
+-int, short, long and long long are all signed (must explicitally define it unsigned)
+-unsigned int may be abbreviated as unsigned
+-there are three distinct basic character types char, signed char, and unsigned char
+-although there are three types of char there are only two representations signed and unsigned
+-plain char types uses one of the representations (dependent on the compiler)
+-C++, like C, is designed to let programs get close to the hardware
+-rules of thumb when selecting what type to use
+	-use an unsigned type when you know that the values cannot be negative
+	-use int over short, if the value is larger than guaranteed size of int use long long
+	-avoid using char for artihmetic expressions as it may be signed or unsigned depending on machine
+	-if you need a tiny integer, explicitly specify either signed char or unsigned char
+	-use double for floating-point computations over float as it's more precise and size difference is negligible
+	-precision offered by long double usually is unnecessary
