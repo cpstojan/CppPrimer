@@ -1,0 +1,3 @@
+To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
+
+For each type I'd use a double.  This is due to all numbers needing decimals.  Also the book suggests using double over float as float usually does not have enough precision.  The cost of double-precision calculations vs single-precision is negligible.  In fact, on some machines double precision operations are faster than single.  Long double however would be unnecessary and could cause considerable run-time cost.
