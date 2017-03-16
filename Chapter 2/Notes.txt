@@ -62,4 +62,12 @@ unsigned - integer type that holds only values greater than or equal to zero
 	-8-bit unsigned can hold values from 0 to 255 inclusive, modulo 256, -1 produces 255
 -when we assign an out-of-range value to an object of signed type, the result is undefined
 -undefined may crash or may produce a garbage value
-
+-undefined errors may still compile but leave the code open to risk of crashing at any time
+-implenetation defined behavior should also be avoided as it will make the program non-portable
+-if using an int value and an unsigned the int value ordinarily is converted to unsigned for example
+	unsigned u =10;
+	int i = -42;
+	std::cout << u + i << std::endl // prints 4294967264
+-when using unsigned in for loops you must be careful as they will never be negative (wrap around) while loops may be easier
+-it is best not to mix signed and unsigned values as they can produce surprising results
+-when mixing signed and unsigned values the result is always converted to an unsigned
