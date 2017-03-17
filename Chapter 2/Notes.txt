@@ -71,3 +71,51 @@ unsigned - integer type that holds only values greater than or equal to zero
 -when using unsigned in for loops you must be careful as they will never be negative (wrap around) while loops may be easier
 -it is best not to mix signed and unsigned values as they can produce surprising results
 -when mixing signed and unsigned values the result is always converted to an unsigned
+
+literl - a value such as a number, character, or string of characters. The value cannot change.
+-every literal has a type
+-integer literals that begin with 0 are interpreted as octal
+-integer literals that begin with 0x or 0X are interpreted as hexadecimal
+	20 /* decimal */ 024 /* octal */ 0x14 /* hexadecimal */
+-the type of an integer literal depend on its value and notation
+-by default decimal literals are signed, octal and hexadecimal can be either
+-there are no literals of type short
+-we can override the defaults by using a suffix
+	
+	Chracter and Character String Literals:
+	Prefix		Meaning					Type
+	u			Unicode 16 character	char16_t
+	U			Unicode 32 character	char32_t
+	L			wide character			wchar_t
+	
+	Integer Literals
+	Suffix		Minimum Type
+	u or U		unsigned
+	l or L		long
+	ll or LL	long long
+	
+	Floating-Point Literals
+	Suffix		Type
+	f or F		float
+	l or L		long double
+-although integer literals may be stored in signed types, the value of a decimal literal is never a negative nnumber
+-the minus sign is not part of the literal, it is an operator that negates the value of its (literal) operand
+-by default dloating-point literals have type double
+-floating point literals can also include an exponent
+-a string literal is an array of constant chars, it is one longer than expected due to the null character added to every string literal
+-string literals that are separated by only spaces, tabs, or newlines are concatenated into a single literal
+	Escape Sequences to print special characters
+	\n	newline
+	\v	vertical tab
+	\\	backslash
+	\r	carriage return
+	\t	horizontal tab
+	\b	backspace
+	\?	question mark
+	\f	formfeed
+	\a	alert (bell)
+	\"	double quote
+	\'	single quote
+-the escape sequence could also be \x followed by hexadecimal digits or \ followed by octal digits
+-for octal digits proceeding an escape sequence only the first three are evaluated
+-for hexadecimal digits proceeding an escape sequence all are evaluated
