@@ -119,3 +119,6 @@ literl - a value such as a number, character, or string of characters. The value
 -the escape sequence could also be \x followed by hexadecimal digits or \ followed by octal digits
 -for octal digits proceeding an escape sequence only the first three are evaluated
 -for hexadecimal digits proceeding an escape sequence all are evaluated
+-when you write a long literal, use the uppercase L as the lowercase letter l looks like the digit 1
+-true and false are literals of type bool
+-nullptr is a pointer literal
