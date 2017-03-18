@@ -1,0 +1,7 @@
+What, if any, are the differences between the following
+definitions:
+int month = 9, day = 7;
+int month = 09, day = 07;
+
+The first line both definitions are valid and deoimal.
+In the second line the first definition is not valid as it is octal and octal does not contain the digit 9.  The second definition is also octal but is valid.

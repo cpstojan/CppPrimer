@@ -1,0 +1,6 @@
+What values do these literals represent? What type does each
+have?
+(a) "Who goes with F\145rgus?\012" This is a string literal with \145 being e and \012 being a new line
+(b) 3.14e1L This is a long double with value 31.4
+(c) 1024f This produces an error as the suffix is only valid with floating point literals
+(d) 3.14L This is a long double with value 3.14
