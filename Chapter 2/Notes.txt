@@ -122,3 +122,8 @@ literl - a value such as a number, character, or string of characters. The value
 -when you write a long literal, use the uppercase L as the lowercase letter l looks like the digit 1
 -true and false are literals of type bool
 -nullptr is a pointer literal
+
+2.2 Variables:
+variable - a named object or reference.  In C++, variables must be declared before they are used.
+-each variable has a type
+-a variable definitions consists of a type specifier, a list of one or more variable names separated by commas, and a semicolon
