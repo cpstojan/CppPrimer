@@ -1,0 +1,6 @@
+Explainin the following definitions. For those that are illegal,
+explain whats wrong and how to correct it.
+(a) std::cin >> int input_value; // variable must be defined before the cin
+(b) int i = { 3.14 }; // c++ 11 will not allow this as it results in a loss of data
+(c) double salary = wage = 9999.99; // will run if wage has been previously defined, otherwise error 
+(d) int i = 3.14; // will work however number will be truncated
