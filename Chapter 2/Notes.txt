@@ -124,6 +124,23 @@ literl - a value such as a number, character, or string of characters. The value
 -nullptr is a pointer literal
 
 2.2 Variables:
-variable - a named object or reference.  In C++, variables must be declared before they are used.
+variable - a named object or reference to manipulate.  In C++, variables must be declared before they are used.
 -each variable has a type
--a variable definitions consists of a type specifier, a list of one or more variable names separated by commas, and a semicolon
+-a variable definition consists of a type specifier, a list of one or more variable names separated by commas, and a semicolon
+-an object that is initialized gets the specified value at the moment it is created
+-initialization and assignment are different operations in C++
+-initialization is giving a variable a value when it is created, assignment obliterates an objects current value and replaces it
+-there are many ways to initialize in C++ for example all are valid
+	int units_solid = 0;
+	int units_sold = {0};
+	int units_sold{0};
+	int units_sold(0);
+list initialization - form of initialization that uses curly braces to enclose one or more initializers
+-the compiler will not let us list initialize variables of built-in type if the initializer might lead to the loss of information
+	long double ld = 3.1415926536;
+	int {1d}. b = {1d} // error: narrowing conversion required
+	int c(1d), d= 1d; // ok: but value will be truncated
+default initialized - how objects are initialized when no explicit initializer is given
+					- class type objects are initialized dependent on the classes implementation
+					- objects of built-in type defined at global scope are initialized to 0
+					- objects of built-in type defined at local scope are unitialized
