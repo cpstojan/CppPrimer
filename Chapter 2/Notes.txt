@@ -156,3 +156,10 @@ definition - allocates storage for a variable of a specified type
 -if an intializer is added to the extern the intializer overrides the extern
 	extern double pi = 3.1416; // definition
 -variables must be defined exactly once but can be declared many times
+
+-C++ is a statically typed language, types are checked at compile time
+type checking - the process by which the compiler verifies that the way objects of a given type are used is consistent with the definition of that type
+identifiers - sequence of character that make up a name, they are case sensitive
+-an identifier may not contain two consecutive underscores, nor can it begin with an underscore followed by an uppercase letter
+-identifiers defined outside a function may not begin with an underscore
+-variables are usually lowercase, classes are usually uppercase
