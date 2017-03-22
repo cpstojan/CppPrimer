@@ -144,3 +144,15 @@ default initialized - how objects are initialized when no explicit initializer i
 					- class type objects are initialized dependent on the classes implementation
 					- objects of built-in type defined at global scope are initialized to 0
 					- objects of built-in type defined at local scope are unitialized
+
+-an unitialized variable has an indeterminate value
+-it is recommended to intialize all objects of built-in type for safety reasons
+separate compilation - ability to split a program into mulltiple separate source files
+declaration - asserts the existence of a variable, function, or type defined elsewhere
+definition - allocates storage for a variable of a specified type
+-to obtain a declaration that is not also a definition we add the extern keyword
+	extern int i; // declares but does not define i
+	int i; // ddeclares and defines i
+-if an intializer is added to the extern the intializer overrides the extern
+	extern double pi = 3.1416; // definition
+-variables must be defined exactly once but can be declared many times
