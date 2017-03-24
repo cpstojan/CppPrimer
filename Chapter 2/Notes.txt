@@ -163,3 +163,18 @@ identifiers - sequence of character that make up a name, they are case sensitive
 -an identifier may not contain two consecutive underscores, nor can it begin with an underscore followed by an uppercase letter
 -identifiers defined outside a function may not begin with an underscore
 -variables are usually lowercase, classes are usually uppercase
+
+scope - the portion of a program in which names have meaning. C++ has severl levels of scope
+	global - names defined oustide any other scope
+	class - names defined inside a class
+	namespace - names defined inside a namespace
+	block - names defined inside a block
+-scopes nest, once a name is declared it is accessible until the end of the scope in which it was declared
+-most scopes are delimited by curly braces
+-main is defined outside a function, thus, has global scope
+-define variables where you first use them to improve readability
+inner scope - scope that is nested inside another scope
+outer scope - scope that encloses another scope
+-once declared the variable can be used by scopes nested inside the current scope
+-names declared in the outer scope can also be redefined in an inner scope, although this is often a bad idea
+-to request a global scope variable (override the local) you may use the scope operator with no namespace ::numGlobal (global has no namespace)
