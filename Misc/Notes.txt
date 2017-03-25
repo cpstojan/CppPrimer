@@ -31,3 +31,21 @@ PUT - one system needs to update something in another system
 
 -http://web.archive.org/web/20130116005443/http://tomayko.com/writings/rest-to-my-wife
 
+Difference Between const Pointer and Reference
+-const pointers can be NULL
+-a reference does not have it's own address a pointer does
+-the address of the pointer is the actual object's address
+-no reference arithmetic where as pointer arithmetic is very useful (going through an array)
+-a pointer has it's own memory address and size on the stack, for a reference it is shared with the original value
+-pointers can have multiple levels of indirection (pointer to pointer to pointer etc.)
+-references only offer one level of indirection
+-pointers need to be dereferenced (*) to use their value, references can be used directly
+-to access members of a class struct for a pointer you use -> for a reference simply the . operator
+
+-const reference can be bound to temporaries, pointers cannot
+	const int &x = int(12) // legal, only if const
+	int * y = &int(12) // illegal to dereference a temporary
+
+
+-use references in function parameters and return types 
+-use pointers to implement algorithms and data structures
