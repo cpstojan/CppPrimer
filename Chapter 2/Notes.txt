@@ -178,3 +178,12 @@ outer scope - scope that encloses another scope
 -once declared the variable can be used by scopes nested inside the current scope
 -names declared in the outer scope can also be redefined in an inner scope, although this is often a bad idea
 -to request a global scope variable (override the local) you may use the scope operator with no namespace ::numGlobal (global has no namespace)
+
+2.3 Compound Types:
+compound type - a type that is defined in terms of another type
+-there are several compound types in C++ (references and pointers are examples)
+-a simple declaration consist of a type followed by a list of variable names
+base type - type specifier, possibly qualified by const, that precedes the declarators in a declaration
+declarator - the part of a declaration that includes the name being defined and an optional type modifier
+-so far in declarations declarators are just variable names, and the base type is the type of variable
+-more complicated declarators specify variables with compound types that are built from the base type of the declaration (const * etc)
