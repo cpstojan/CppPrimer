@@ -187,3 +187,19 @@ base type - type specifier, possibly qualified by const, that precedes the decla
 declarator - the part of a declaration that includes the name being defined and an optional type modifier
 -so far in declarations declarators are just variable names, and the base type is the type of variable
 -more complicated declarators specify variables with compound types that are built from the base type of the declaration (const * etc)
+
+-the new standard introduced a new kind of reference called an rvalue reference
+-when we use the term reference we mean lvalue reference
+reference - an alias for another object
+-a reference type is defined by writing a declarator of the form &d where d is the name being declared
+	int ival = 1024
+	int &refVal = ival;
+-usually when a variable is defined the value of the initializer is copied into the created object
+-for references it is binded (the reference) to the initializer
+-references may not be left uninitialized and can not be rebinded
+-a reference is not an object a reference is just another name for an already existing object
+-anything done to the reference is done to the initializer
+	int &refVal3 = refVal; // refVal3 is bound to the object to which refVal is bound
+-because references are not objects we may not define a reference to a reference 
+-a reference may be bound only to an object, not to a literal or to the result of a more general expression
+-the type of reference and the object to which the reference refers must match exactly (two exceptions covered later)
