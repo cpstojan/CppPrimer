@@ -203,3 +203,22 @@ reference - an alias for another object
 -because references are not objects we may not define a reference to a reference 
 -a reference may be bound only to an object, not to a literal or to the result of a more general expression
 -the type of reference and the object to which the reference refers must match exactly (two exceptions covered later)
+
+-a pointer is a compound type that "points to" another type, used for indirect access to other objects (like references)
+-pointers are an object and can be assigned and copied
+	int * ip1 = &ival, *ip2; // uninitialized pointers at block scope have an undefined value
+-a pointer holds the address of another object, the address can be accessed using the address-of operator &
+-as references are not objects the don't have addresses and may not be pointed to
+-the pointer type and the object being pointed to must match as the pointer type is used to infer the type of object and operations performed
+-the value stored in a pointer can be in one of four states
+	1. It can point to an object
+	2. It can point to the location just immediately past the end of an object
+	3. It can be a null pointer
+	4. It can be invalid (anything other than the above three)
+-the result of accesing an invalid pointer is undefined
+-to use a value that the pointer points to you must use the derefence operator (the * operator)
+	cout << *ip1;
+	*ip1 = 0; // int pointed to by ip1 is now equal to 0
+-in declarations & and * are used to form compound types, in expressions these samy symbols are used to deonate an operator
+
+null pointers - 
