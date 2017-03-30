@@ -221,4 +221,4 @@ reference - an alias for another object
 	*ip1 = 0; // int pointed to by ip1 is now equal to 0
 -in declarations & and * are used to form compound types, in expressions these samy symbols are used to deonate an operator
 
-null pointers - 
+null pointers - pointer whose value is 0. A null pointer is valid but does not point to any object
