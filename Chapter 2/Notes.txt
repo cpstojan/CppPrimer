@@ -237,3 +237,6 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 -a pointer to an object and a pointer one past the end of a different object can hold the same address
 -a void pointer is a special pointer type that can hold the address of any object
 -void pointers are more restricted in what operations can be performed on them
+-a void pointer can be compared, it can be passed or returned to a function, and it can be assigned to another void pointer
+-you can not use a void pointer to operate on the object it addresses as the type is unknown and thus operations are unknown
+-generally we use a void pointer to deal with memory as memory rather than using the pointer to access the objet stored in that memory
