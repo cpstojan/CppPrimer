@@ -1,0 +1,13 @@
+Explain the key differences between pointers and references.
+
+pointers
+-are an object
+-can be reassigned or copied
+-there exists pointer arithmetic
+-can be uninitialized
+
+references
+-do not exist in memory
+-alias another object and don't have an address of their own
+-can not be modified once created
+-must be initialized
