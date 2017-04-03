@@ -1,0 +1,5 @@
+Why is the initialization of p legal but that of lp illegal?
+
+int i = 42; void *p = &i; long *lp = &i;
+
+P is a special pointer of type void.  This special pointer has the ability to point to objects of any types as it has builtin restrictions.  lp is not of this type and thus what it points to must match its type.  This condition has not been met and therefore it is illegal.

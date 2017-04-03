@@ -1,0 +1,3 @@
+Given a pointer p, can you determine whether p points to a valid object? If so, how? If not, why not?
+
+You can easily determine if the object points to NULL.  However, if it does indeed point to an address determining validity is difficult.  There are methods to do this but they have not been taught in the book yet.  It is possible to check through exception handling, however, this will be looked at in later chapters.

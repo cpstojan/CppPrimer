@@ -1,0 +1,7 @@
+Explain each of the following definitions. Indicate whether any are illegal and, if so, why.
+
+int i = 0;
+
+(a) double* dp = &i; // illegal due to a mismatch of type
+(b) int *ip = i; // illegal must provide an address
+(c) int *p = &i; // legal
