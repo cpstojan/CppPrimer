@@ -240,3 +240,8 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 -a void pointer can be compared, it can be passed or returned to a function, and it can be assigned to another void pointer
 -you can not use a void pointer to operate on the object it addresses as the type is unknown and thus operations are unknown
 -generally we use a void pointer to deal with memory as memory rather than using the pointer to access the objet stored in that memory
+
+-a variable defintion consists of a base type and a list of declarators, each declarator can relate its variable to the base type differently
+	int i = 1024, * p = &i, &r = i;
+-for a definition int * p, int is the base type, * modifies the type of p
+	int* p1, p2; // p1 is a pointer to an int, p2 is simply an int
