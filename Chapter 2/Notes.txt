@@ -245,3 +245,10 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	int i = 1024, * p = &i, &r = i;
 -for a definition int * p, int is the base type, * modifies the type of p
 	int* p1, p2; // p1 is a pointer to an int, p2 is simply an int
+
+-there is no limit to how many type modifiers can be applied to a declarator
+-pointers can point to other pointers and so on
+	int ival = 1024;
+	int * pi = &ival;
+	int ** ppi = &pi;
+	std::cout << **ppi << *pi << ival << std::endl;
