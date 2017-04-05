@@ -252,3 +252,12 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	int * pi = &ival;
 	int ** ppi = &pi;
 	std::cout << **ppi << *pi << ival << std::endl;
+
+-you can not point to a reference as a reference is not an object and has no address
+-you can hae a reference to a pointer as a pointer is an object
+	int i = 42;
+	int *p; // p is an uninitialized int pointer
+	int *&r = p; // r is a reference to the pointer p
+	r = &i; // r refers to p, p now points to i
+	*r = 0; // i is set to 0, as r points to i
+-definitions are most easily read from right to left
