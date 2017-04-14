@@ -156,6 +156,19 @@ definition - allocates storage for a variable of a specified type
 -if an intializer is added to the extern the intializer overrides the extern
 	extern double pi = 3.1416; // definition
 -variables must be defined exactly once but can be declared many times
+-extern should be present in the header file not the source file
+-a function should never need to declare a variable using extern it should be global
+	file1.h
+	extern int errno;
+	
+	file1.c
+	int errno = 0;
+	
+	file2.c
+	#include <file1.h>
+	
+	if (errno < 10) 
+		... code ...  // errno may be used as it was declared somewhere else and included
 
 -C++ is a statically typed language, types are checked at compile time
 type checking - the process by which the compiler verifies that the way objects of a given type are used is consistent with the definition of that type
@@ -254,7 +267,7 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	std::cout << **ppi << *pi << ival << std::endl;
 
 -you can not point to a reference as a reference is not an object and has no address
--you can hae a reference to a pointer as a pointer is an object
+-you can have a reference to a pointer as a pointer is an object
 	int i = 42;
 	int *p; // p is an uninitialized int pointer
 	int *&r = p; // r is a reference to the pointer p
