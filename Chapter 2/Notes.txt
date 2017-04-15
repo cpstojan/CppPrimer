@@ -281,3 +281,12 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 -any attempt to assign a new value to a const will be an error
 -a const may not be left uninitialized this is an error
 -a const can do everything a regular variable can (be used to convert to bool, arithmetic expressions) so long as it does not change the const
+-when a const object is initialized from a compile-time constant the compiler will usually replace uses of the variable with its corresponding value
+-const variables declared at global scope are local to the file in which the object is defined
+-to use const like other nonconst variables and utilize it across multiple files without multiple definitions a different process is used
+-extern must be used on both its definition and declaration(s)
+	file_1.h
+	extern const int bufSize;
+	
+	file_1.cc
+	extern const int bufSize = fcn();
