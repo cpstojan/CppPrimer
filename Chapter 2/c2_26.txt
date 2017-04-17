@@ -1,0 +1,5 @@
+Which of the following are legal? For those that are illegal, explain why.
+(a) const int buf; // not legal as const must be initialized
+(b) int cnt = 0; // legal
+(c) const int sz = cnt; // legal
+(d) ++cnt;  ++sz; // incrementing cnt is legal, incrementing sz is not
