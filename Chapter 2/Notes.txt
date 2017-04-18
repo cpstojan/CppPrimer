@@ -290,3 +290,8 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	
 	file_1.cc
 	extern const int bufSize = fcn();
+
+-as with any other object, you may bind a reference to an object of a const type
+	const int ci = 1024;
+	const int &r1 = ci;
+-if the object is a const type the reference must also be a const type
