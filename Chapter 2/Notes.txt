@@ -303,3 +303,10 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	const int &r2 = 42; // valid
 	const int &r3 = r1 * 2; // valid
 	int &r4 = r1 * 2 // not valid as r4 is non const reference
+temporary - unnamed object created by the compiler while evaluating an expression
+-when creating a const reference that requires a conversion the compiler creates a temporary object
+-it can be thought of as this:
+	double dval = 3.14;
+	const int &ri = dval;
+	// const int temp = dval; //done by compiler hidden away
+	// const int &ri = temp; //
