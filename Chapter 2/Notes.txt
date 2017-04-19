@@ -295,3 +295,11 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	const int ci = 1024;
 	const int &r1 = ci;
 -if the object is a const type the reference must also be a const type
+
+-there are two exceptions to the rule that the type of a reference must match the type of the object to which it refers
+-we can bind a reference to const to a nonconst object, a literal or a more general expression
+	int i = 42;
+	const int &r1 = i; // valid
+	const int &r2 = 42; // valid
+	const int &r3 = r1 * 2; // valid
+	int &r4 = r1 * 2 // not valid as r4 is non const reference
