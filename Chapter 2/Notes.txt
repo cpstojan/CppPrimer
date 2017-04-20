@@ -315,5 +315,8 @@ temporary - unnamed object created by the compiler while evaluating an expressio
 -you may store the address of a const object only in a pointer to const (much like with references)
 	const double pi = 3.14; 
 	double *ptr = &pi // error as ptr is plain pointer
-	const double *cptre = &pi; // valid
+	const double *cptr = &pi; // valid
 -again much like references you may use a pointer to const to point to a nonconst object (one of the two exceptions of type matching for pointers)
+	double dval = 3.14;
+	cont int * cptr2 = &dval; // valid
+-like reference to const a pointer to const says nothing about whether the underlying object is const
