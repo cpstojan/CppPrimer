@@ -320,3 +320,8 @@ temporary - unnamed object created by the compiler while evaluating an expressio
 	double dval = 3.14;
 	cont int * cptr2 = &dval; // valid
 -like reference to const a pointer to const says nothing about whether the underlying object is const
+
+-as pointers are objects as with any other object type, we can have a pointer that is itself const
+-const pointers must be initialized
+	int errNumb = 0;
+	int * const curErr = &errNumb;
