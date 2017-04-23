@@ -324,4 +324,7 @@ temporary - unnamed object created by the compiler while evaluating an expressio
 -as pointers are objects as with any other object type, we can have a pointer that is itself const
 -const pointers must be initialized
 	int errNumb = 0;
-	int * const curErr = &errNumb;
+	int * const curErr = &errNumb; // curErr will always point to errNumb
+	const double pu = 3.14159;
+	const double * const pip = &pi // pip is a const pointer to a const object
+	
