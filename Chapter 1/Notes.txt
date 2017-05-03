@@ -1,19 +1,19 @@
 Chapter 1 Notes
 
 Introduction to the Book:
--the primary goal of the new standards of C++ (C++11) are to increase uniformity, make the standard library easier, safer and more efficient, and to make it easier to write efficient abstractions
+-the primary goal of the new standards of C++ (C++11) is to increase uniformity, make the standard library easier, safer and more efficient, and to make it easier to write efficient abstractions
 -new features include auto, smart ptrs, and move-enabled containers
 
 1.1 Writing a Simple C++ Program:
 function - named unit of computation
 main - function called by the operating system to execute a C++ program, each program must have one and only one function named main
 -a function definition has four elements: return type, function name, parameter list and function body
--the value returned by main is a status indicator, usually a value of 0 indicates success, non zero has meaning define by the system (type of error)
+-the value returned by main is a status indicator, usually a value of 0 indicates success, non zero has meaning defined by the system (type of error)
 -a type defines both the contents of a data element and the operations that are possible on that data
--the data our programs manipulate are stored in variables and every variable has a type
+-the data our programs manipulate is stored in variables (every variable has a type)
 source file - term used to describe a file that contains a C++ program
 -to obtain the status on Unix systems use the command echo $? 
--on Unix executables have no suffic (on Windows suffix is .exe)
+-on Unix executables have no suffix (on Windows suffix is .exe)
 -options can be added to the GNU compiler an example is -Wall which generates warnings about problematic constructs
 -to create an executable on GNU g++ -c prog1 prog1.cc
 -then to run the created executable (assuming permissions) ./prog1
@@ -23,7 +23,7 @@ source file - term used to describe a file that contains a C++ program
 -a stream is a sequence of characters read from or written from an IO device
 -the library defines four IO objects
 	1) to handle input we use an object of type istream named cin
-	2) for output an object of type ostream named coutt is used
+	2) for output an object of type ostream named cout is used
 	3) for standard error type ostream; cerr
 	4) for general information type ostream; clog
 -every program that uses a library facility must include its associated header
@@ -48,6 +48,7 @@ initialize - give an object a value at the same time that it is created (defined
 -a while statement executes 'while' something is true
 -a condition is an expression that yields a result that is either true or false
 -the operator += adds the right-hand operand to the left-hand operand and stores the result in the left-hand operand
+-there are similar operators such as /=, *= and -= among others
 -a while executes by testing the condition then executing the associated statement until the condition is false
 -a block is a sequence of zero or more statements enclosed by curly brackets
 
@@ -78,11 +79,13 @@ class - facility for defining our own data structures together with associated o
 	2) where is it defined?
 	3) what operations does it support?
 -conventionally header file names are derived from the name of a class defined in that header
+	a class named Sales_item will be defined in Sales_item.h
+-depending on the compiler this may not be necessary but is suggested for good style
 -headers from the standard library are enclosed in angle brackets, all others are enclosed in double quotes
 -to use a class we don't need to know how it is implemented, what we need to know is what operations objects of that type can perform
 -type name is the same as the class name
 
--using file redirection in Bash can make testing programs much less tedious
+-using file redirection in Bash can make testing programs less tedious
 	c1 < infile.txt > outfile.txt
 
 -a member function is a function that is defined as part of a class, sometimes referred to as methods, it is ordinarily called to operate on a specific object
@@ -90,7 +93,7 @@ class - facility for defining our own data structures together with associated o
 -we call a function using the call operator (), arguments go in the parenthese if any
 
 1.6 The Bookstore Program:
-buffer - a region of storage used to hold data.  IO facilities often store input in a buffer and read or write the buffed independently from actions in the program. Cin and endl flush the buffer
+buffer - a region of storage used to hold data.  IO facilities often store input in a buffer and read or write the buffer independently from actions in the program
 header - mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive
 library type - type, such as istream, defined by the standard library
 namespace - mechanism for putting names defined by a library into a single place.  Namespaces help avoid inadvertent name clashes.
@@ -102,8 +105,8 @@ namespace - mechanism for putting names defined by a library into a single place
 -for a conditonal statement 0 is false any other value is true (opposite of $?)
 -expressions are evaluated to produce a result, it is the smallest unit of computation (i + j)
 
--the main goals of this chapter were to allow you to compile and execute a simple C++ program
--also how to define a main, define variables do input and output, and how to use flow control (if, while, for)
+-the main goals of this chapter was to allow you to compile and execute a simple C++ program
+-also how to define a main, define variables, do input and output, and how to use flow control (if, while, for)
 -this chapter showed how to use a class defined by someone else, later chapters will show how to define a class
 
 Part I: The Basics:
@@ -116,6 +119,6 @@ Part I: The Basics:
 	-defining functions
 -the type of an object determines what operations can be performed on it
 -some languages (Python) check types at run time, C++ is statically types meaning type checking is done at compile time
--statically typed languages must have the compile knowing the type of every name used in the program
+-statically typed languages must have the compiler knowing the type of every name used in the program
 -C++ power comes from it's ability to allow the programmer to define new data structures
 -programmer defined types are sometimes called class types (as opposed to built-in types)
