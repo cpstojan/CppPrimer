@@ -3,12 +3,12 @@ Chapter 2 Notes
 Introduction to Chapter 2:
 -C++ defines several primitive types (characters, integers, floating-point numbers, etc.)
 -more importantly C++ allows for the definition of our own data types
--the standard library allows defines more complicated types that can be very powerful
+-the standard library defines more complicated types that can be very powerful
 
 2.1 Primitive Built-in Types:
 arithmetic types - built-in types representing boolean values, character, integers, and floating-point numbers
 -the void type has no associated values
--artihmetic types are divided into two categories 
+-arithmetic types are divided into two categories 
 	1) integral types - character and booolean
 	2) floating-point types
 -minimum size (actual size depends on machine)
@@ -28,7 +28,7 @@ arithmetic types - built-in types representing boolean values, character, intege
 -most compilers provide more precision than the speciied minimum of significant digits
 -a char is guaranteed to be big enough to hold numeric values corresponding to the characters in the machine's basic character set
 	-always the same size as a single machine byte
--a wchar_t is guranteed to be large enough to hold any character in the machine's largest extended character set
+-a wchar_t is guaranteed to be large enough to hold any character in the machine's largest extended character set
 -Unicode is a standard for representing characters used in essentially any natural language
 -the type long long was introduced by the new standard
 -the smallest chunk of addressable memory is referred to as a byte
