@@ -58,21 +58,21 @@ unsigned - integer type that holds only values greater than or equal to zero
 -when we assign a bool to an arithmetic type the resule value is 1 if true the bool is true otherwise 0
 -when we assign a floating-point value to an object of integral type, the value is truncated
 -when we assign an integral value to a floating-point type the fractional part is 0
--when we assign an out-of-range value to an unsigned type the result is the remainder of the value modulo the number of values the taret type can hold
+-when we assign an out-of-range value to an unsigned type the result is the remainder of the value modulo the number of values the type can hold
 	-8-bit unsigned can hold values from 0 to 255 inclusive, modulo 256, -1 produces 255
 -when we assign an out-of-range value to an object of signed type, the result is undefined
 -undefined may crash or may produce a garbage value
 -undefined errors may still compile but leave the code open to risk of crashing at any time
--implenetation defined behavior should also be avoided as it will make the program non-portable
+-implementation defined behavior should also be avoided as it will make the program non-portable
 -if using an int value and an unsigned the int value ordinarily is converted to unsigned for example
-	unsigned u =10;
+	unsigned u = 10;
 	int i = -42;
 	std::cout << u + i << std::endl // prints 4294967264
--when using unsigned in for loops you must be careful as they will never be negative (wrap around) while loops may be easier
+-when using unsigned in for loops you must be careful as they will never be negative (wrap around); while loops may be easier
 -it is best not to mix signed and unsigned values as they can produce surprising results
 -when mixing signed and unsigned values the result is always converted to an unsigned
 
-literl - a value such as a number, character, or string of characters. The value cannot change.
+literal - a value such as a number, character, or string of characters. The value cannot change.
 -every literal has a type
 -integer literals that begin with 0 are interpreted as octal
 -integer literals that begin with 0x or 0X are interpreted as hexadecimal
@@ -98,9 +98,9 @@ literl - a value such as a number, character, or string of characters. The value
 	Suffix		Type
 	f or F		float
 	l or L		long double
--although integer literals may be stored in signed types, the value of a decimal literal is never a negative nnumber
+-although integer literals may be stored in signed types, the value of a decimal literal is never a negative number
 -the minus sign is not part of the literal, it is an operator that negates the value of its (literal) operand
--by default dloating-point literals have type double
+-by default floating-point literals have type double
 -floating point literals can also include an exponent
 -a string literal is an array of constant chars, it is one longer than expected due to the null character added to every string literal
 -string literals that are separated by only spaces, tabs, or newlines are concatenated into a single literal
