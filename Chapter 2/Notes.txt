@@ -139,21 +139,22 @@ list initialization - form of initialization that uses curly braces to enclose o
 -the compiler will not let us list initialize variables of built-in type if the initializer might lead to the loss of information
 	long double ld = 3.1415926536;
 	int {1d}. b = {1d} // error: narrowing conversion required
-	int c(1d), d= 1d; // ok: but value will be truncated
+	int c(1d), d = 1d; // ok: but value will be truncated
 default initialized - how objects are initialized when no explicit initializer is given
 					- class type objects are initialized dependent on the classes implementation
 					- objects of built-in type defined at global scope are initialized to 0
-					- objects of built-in type defined at local scope are unitialized
+					- objects of built-in type defined at local scope are uninitialized
 
 -an unitialized variable has an indeterminate value
--it is recommended to intialize all objects of built-in type for safety reasons
+-it is recommended to initialize all objects of built-in type for safety reasons
+
 separate compilation - ability to split a program into mulltiple separate source files
 declaration - asserts the existence of a variable, function, or type defined elsewhere
 definition - allocates storage for a variable of a specified type
 -to obtain a declaration that is not also a definition we add the extern keyword
 	extern int i; // declares but does not define i
 	int i; // ddeclares and defines i
--if an intializer is added to the extern the intializer overrides the extern
+-if an initializer is added to the extern the initializer overrides the extern
 	extern double pi = 3.1416; // definition
 -variables must be defined exactly once but can be declared many times
 -extern should be present in the header file not the source file
@@ -177,7 +178,7 @@ identifiers - sequence of character that make up a name, they are case sensitive
 -identifiers defined outside a function may not begin with an underscore
 -variables are usually lowercase, classes are usually uppercase
 
-scope - the portion of a program in which names have meaning. C++ has severl levels of scope
+scope - the portion of a program in which names have meaning. C++ has several levels of scope
 	global - names defined oustide any other scope
 	class - names defined inside a class
 	namespace - names defined inside a namespace
