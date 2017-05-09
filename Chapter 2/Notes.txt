@@ -196,7 +196,7 @@ outer scope - scope that encloses another scope
 2.3 Compound Types:
 compound type - a type that is defined in terms of another type
 -there are several compound types in C++ (references and pointers are examples)
--a simple declaration consist of a type followed by a list of variable names
+-a simple declaration consists of a type followed by a list of variable names
 base type - type specifier, possibly qualified by const, that precedes the declarators in a declaration
 declarator - the part of a declaration that includes the name being defined and an optional type modifier
 -so far in declarations declarators are just variable names, and the base type is the type of variable
@@ -219,10 +219,10 @@ reference - an alias for another object
 -the type of reference and the object to which the reference refers must match exactly (two exceptions covered later)
 
 -a pointer is a compound type that "points to" another type, used for indirect access to other objects (like references)
--pointers are an object and can be assigned and copied
+-pointers are objects and can be assigned and copied
 	int * ip1 = &ival, *ip2; // uninitialized pointers at block scope have an undefined value
 -a pointer holds the address of another object, the address can be accessed using the address-of operator &
--as references are not objects the don't have addresses and may not be pointed to
+-as references are not objects they don't have addresses and may not be pointed to
 -the pointer type and the object being pointed to must match as the pointer type is used to infer the type of object and operations performed
 -the value stored in a pointer can be in one of four states
 	1. It can point to an object
@@ -233,7 +233,7 @@ reference - an alias for another object
 -to use a value that the pointer points to you must use the derefence operator (the * operator)
 	cout << *ip1;
 	*ip1 = 0; // int pointed to by ip1 is now equal to 0
--in declarations & and * are used to form compound types, in expressions these samy symbols are used to deonate an operator
+-in declarations & and * are used to form compound types, in expressions these same symbols are used to denote an operator
 
 null pointers - pointer whose value is 0. A null pointer is valid but does not point to any object
 -a null pointer can be obtained several ways
