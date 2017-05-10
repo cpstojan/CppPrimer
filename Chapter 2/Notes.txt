@@ -240,12 +240,12 @@ null pointers - pointer whose value is 0. A null pointer is valid but does not p
 	int * p1 = nullptr;
 	int * p2 = 0;
 	int * p3 = NULL;
-preprocessor variable - the preprocessor replaces each preprocessor variable by ts vale before program is compiled
+preprocessor variable - the preprocessor replaces each preprocessor variable by its value before the program is compiled
 -older programs used a preprocessor variable named NULL which the cstdlib header defined as zero
 -in the new standard nullptr comes as a built-in literal
 -the preprocessor is a program that runs before the compiler
 -it is illegal to assign an int variable to a pointer even if the variable's value is zero
--it is suggested to initialize all pointers to avoid risks if not to another object than to nullptr
+-it is suggested to initialize all pointers to avoid risks, if not to another object than to nullptr
 -you can use a pointer in a condition if(p1) if p1 is nullptr it is evaluated as false
 -pointers can also be compared with the equality operators if they are of the same type
 -a pointer to an object and a pointer one past the end of a different object can hold the same address
@@ -276,7 +276,7 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 	*r = 0; // i is set to 0, as r points to i
 -definitions are most easily read from right to left
 
-2.4 Const Qualifier
+2.4 Const Qualifier:
 -we can make a variable unchangeable by defining the variable's type as const
 	const in bugSize = 512;
 -any attempt to assign a new value to a const will be an error
