@@ -278,7 +278,7 @@ preprocessor variable - the preprocessor replaces each preprocessor variable by 
 
 2.4 Const Qualifier:
 -we can make a variable unchangeable by defining the variable's type as const
-	const in bugSize = 512;
+	const int bugSize = 512;
 -any attempt to assign a new value to a const will be an error
 -a const may not be left uninitialized this is an error
 -a const can do everything a regular variable can (be used to convert to bool, arithmetic expressions) so long as it does not change the const
