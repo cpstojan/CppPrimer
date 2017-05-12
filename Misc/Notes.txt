@@ -1,5 +1,5 @@
 REST:
--ReST stands for Representational state tranfer
+-ReST stands for Representational State Tranfer
 
 -all webpages are made up of resources, these resources are pointed to by URLs
 -resources can be thought of as 'nouns'
@@ -46,6 +46,5 @@ Difference Between const Pointer and Reference
 	const int &x = int(12) // legal, only if const
 	int * y = &int(12) // illegal to dereference a temporary
 
-
 -use references in function parameters and return types 
--use pointers to implement algorithms and data structures
+-use pointers to implement algorithms and data structure
