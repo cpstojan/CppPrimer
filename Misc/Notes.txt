@@ -44,7 +44,11 @@ Differences Between const Pointer and Reference
 
 -const reference can be bound to temporaries, const pointers cannot
 	const int &x = int(12) // legal, only if const
+<<<<<<< HEAD
 	const int * y = &int(12) // illegal to dereference a temporary
+=======
+	int * y = &int(12) // illegal to dereference a temporary
+>>>>>>> origin/master
 
 -use references in function parameters and return types 
--use pointers to implement algorithms and data structures
+-use pointers to implement algorithms and data structure
