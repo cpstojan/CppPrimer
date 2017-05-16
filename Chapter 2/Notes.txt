@@ -329,3 +329,4 @@ temporary - unnamed object created by the compiler while evaluating an expressio
 	const double pu = 3.14159;
 	const double * const pip = &pi // pip is a const pointer to a const object
 -the fact that a pointer is itself const says nothing about whether we can use the pointer to change the underlying object
+-
