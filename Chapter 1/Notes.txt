@@ -94,13 +94,13 @@ class - facility for defining our own data structures together with associated o
 
 1.6 The Bookstore Program:
 buffer - a region of storage used to hold data.  IO facilities often store input in a buffer and read or write the buffer independently from actions in the program
-header - mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through a #include directive
+header - mechanism whereby the definitions of a class or other names are made available to multiple programs. A program uses a header through an #include directive
 library type - type, such as istream, defined by the standard library
 namespace - mechanism for putting names defined by a library into a single place.  Namespaces help avoid inadvertent name clashes.
 -variables of class type for which no initial value is specified are initialized as specified by the class definition
 -variables of built-in type defined inside a function are uninitialized unless explicitly initialized. It is an error to try to use the value of an uninitialized variable
 -the names defined by the C++ library are in the namespace std
--cerr is not buffered, clog is buffered
+-cerr is not buffered, clog and cout is buffered
 -library types such as istream and ostream are classes
 -for a conditonal statement 0 is false any other value is true (opposite of $?)
 -expressions are evaluated to produce a result, it is the smallest unit of computation (i + j)
